@@ -7,6 +7,7 @@ import org.hibernate.cfg.Configuration;
 public class CreateStudentDemo {
     public static void main(String[] args){
 
+
         //create Session Factory
         SessionFactory factory=new Configuration()
                                     .configure("hibernate.cfg.xml")

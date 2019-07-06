@@ -52,7 +52,7 @@ public class ReadStudentDemo {
 
         }
         finally {
-
+            factory.close();
         }
     }
 }
