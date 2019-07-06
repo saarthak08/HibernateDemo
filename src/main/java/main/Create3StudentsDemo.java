@@ -4,7 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class PrimaryKeyDemo {
+public class Create3StudentsDemo {
     public static void main(String[] args){
 
         //create Session Factory
