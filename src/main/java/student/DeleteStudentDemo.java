@@ -9,7 +9,7 @@ public class DeleteStudentDemo {
 
         //create session factory
         SessionFactory factory=new Configuration().configure("main/resources/hibernate.cfg.xml")
-                .addAnnotatedClass(Student.class)
+                .addAnnotatedClass(main.java.student.Student.class)
                 .buildSessionFactory();
 
         //create session
@@ -23,7 +23,7 @@ public class DeleteStudentDemo {
 
             //retrieve student based on the id: primary key
             System.out.println("Getting Student with id: "+studentId);
-            Student myStudent=session.get(Student.class,studentId);
+            main.java.student.Student myStudent=session.get(main.java.student.Student.class,studentId);
 
             System.out.println("Get complete: "+myStudent);
 

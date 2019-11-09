@@ -1,6 +1,10 @@
 package main.java.InstructorsMappings.OnetoOne;
 
+import InstructorsMappings.OneToMany.Course;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "instructor")
@@ -20,9 +24,12 @@ public class Instructor{
     @Column(name = "email")
     private String email;
 
+    @OneToMany(mappedBy = "instructor",cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
+    private List<Course> courses;
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "instructor_detail_id")
-    private InstructorDetail instructorDetail;
+    private main.java.InstructorsMappings.OnetoOne.InstructorDetail instructorDetail;
 
     public Instructor(String firstName, String lastName, String email) {
         this.firstName = firstName;
@@ -62,11 +69,11 @@ public class Instructor{
         this.email = email;
     }
 
-    public InstructorDetail getInstructorDetail() {
+    public main.java.InstructorsMappings.OnetoOne.InstructorDetail getInstructorDetail() {
         return instructorDetail;
     }
 
-    public void setInstructorDetail(InstructorDetail instructorDetail) {
+    public void setInstructorDetail(main.java.InstructorsMappings.OnetoOne.InstructorDetail instructorDetail) {
         this.instructorDetail = instructorDetail;
     }
 
@@ -79,5 +86,13 @@ public class Instructor{
                 ", email='" + email + '\'' +
                 ", instructorDetail=" + instructorDetail +
                 '}';
+    }
+
+    public void add(Course tempCourse){
+        if(courses==null){
+            courses=new ArrayList<>();
+        }
+        courses.add(tempCourse);
+        tempCourse.setInstructor(this);
     }
 }

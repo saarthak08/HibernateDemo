@@ -2,33 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8faa2a-1035-40e5-828c-b15bc1162a77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/emacs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OnetoOne/CreateDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OnetoOne/Instructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OnetoOne/InstructorDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/HibernateDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HibernateDemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany/CreateInstructorDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany/DeleteInstructorCourseDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d8a4eba5-8ef0-447f-9f47-a18f12a31b15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d8a4eba5-8ef0-447f-9f47-a18f12a31b15.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CreateStudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/CreateStudentDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdbc/TestJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/jdbc/TestJdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Create3StudentsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/Create3StudentsDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/DeleteStudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/DeleteStudentDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/QueryStudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/QueryStudentDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/ReadStudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/ReadStudentDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/UpdateStudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/UpdateStudentDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HibernateDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HibernateDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OnetoOne/CreateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OnetoOne/CreateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OnetoOne/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OnetoOne/Instructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/student/ReadStudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/ReadStudentDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/student/UpdateStudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/UpdateStudentDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/HibernateDemo.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc/TestJdbc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Create3StudentsDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/CreateStudentDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/DeleteStudentDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/QueryStudentDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/ReadStudentDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/UpdateStudentDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/java/InstructorsMappings/OnetoOne/CreateDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/java/InstructorsMappings/OnetoOne/Instructor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/InstructorsMappings/OnetoOne/Instructor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/java/InstructorsMappings/OnetoOne/InstructorDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/InstructorsMappings/OnetoOne/InstructorDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,61 +158,16 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.CreateDemo">
-    <configuration name="Create3StudentsDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.student.Create3StudentsDemo" />
-      <module name="HibernateDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.student.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.InstructorsMappings.OnetoOne.CreateDemo" />
-      <module name="HibernateDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.java.InstructorsMappings.OnetoOne.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeleteStudentDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.student.DeleteStudentDemo" />
-      <module name="HibernateDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.student.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.InstructorsMappings.OnetoOne.TestJDBC" />
+    <configuration name="CreateDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CreateDemo" />
       <module name="HibernateDemo" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestJdbc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.student.jdbc.TestJdbc" />
+    <configuration name="CreateDemo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="CreateDemo" />
       <module name="HibernateDemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.java.InstructorsMappings.OnetoOne.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,10 +175,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CreateDemo" />
-        <item itemvalue="Application.TestJDBC" />
-        <item itemvalue="Application.TestJdbc" />
-        <item itemvalue="Application.DeleteStudentDemo" />
-        <item itemvalue="Application.Create3StudentsDemo" />
+        <item itemvalue="Application.CreateDemo (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -256,6 +205,10 @@
       <workItem from="1570551973893" duration="787000" />
       <workItem from="1570810512793" duration="608000" />
       <workItem from="1570811183985" duration="7664000" />
+      <workItem from="1572664271985" duration="1421000" />
+      <workItem from="1573157067693" duration="1659000" />
+      <workItem from="1573295997282" duration="902000" />
+      <workItem from="1573296967611" duration="5900000" />
     </task>
     <servers />
   </component>

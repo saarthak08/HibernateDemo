@@ -9,7 +9,7 @@ public class ReadStudentDemo {
 
         //create session factory
         SessionFactory factory=new Configuration().configure("main/resources/hibernate.cfg.xml")
-                                    .addAnnotatedClass(Student.class)
+                                    .addAnnotatedClass(main.java.student.Student.class)
                                     .buildSessionFactory();
 
         //create session
@@ -20,7 +20,7 @@ public class ReadStudentDemo {
 
             //create a student object
             System.out.println("Creating a Student..");
-            Student tempStudent=new Student("Saarthak","Gupta","saarthakgupta08@gmail.com");
+            main.java.student.Student tempStudent=new main.java.student.Student("Saarthak","Gupta","saarthakgupta08@gmail.com");
 
             //start a transaction
             session.beginTransaction();
@@ -41,7 +41,7 @@ public class ReadStudentDemo {
 
             //retrieve student based on the id: primary key
             System.out.println("Getting Student with id: "+tempStudent.getId());
-            Student myStudent=session.get(Student.class,tempStudent.getId());
+            main.java.student.Student myStudent=session.get(main.java.student.Student.class,tempStudent.getId());
 
             System.out.println("Get complete: "+myStudent);
 

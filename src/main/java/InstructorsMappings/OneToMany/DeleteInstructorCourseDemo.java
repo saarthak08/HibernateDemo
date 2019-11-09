@@ -1,29 +1,29 @@
+package InstructorsMappings.OneToMany;
 
-import main.java.InstructorsMappings.OnetoOne.Instructor;
-import main.java.InstructorsMappings.OnetoOne.InstructorDetail;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class CreateDemo {
-    public static void main(String[] args) {
+public class DeleteInstructorCourseDemo {
+
+    public static void main(String[] args){
 
         SessionFactory factory=new Configuration()
                 .configure("main/resources/hibernate.cfg.xml")
-                .addAnnotatedClass(Instructor.class)
-                .addAnnotatedClass(InstructorDetail.class)
+                .addAnnotatedClass(main.java.InstructorsMappings.OnetoOne.Instructor.class)
+                .addAnnotatedClass(main.java.InstructorsMappings.OnetoOne.InstructorDetail.class)
+                .addAnnotatedClass(Course.class)
                 .buildSessionFactory();
 
         Session session=factory.getCurrentSession();
         try {
+            int id=1;
 
-            Instructor tempInstructor=new Instructor("Chad","Darby","luv2code@gmail.com");
-            InstructorDetail tempDetail=new InstructorDetail("http://youtube.com/luv2code","Coding");
-            tempInstructor.setInstructorDetail(tempDetail);
-            // start a transaction
             session.beginTransaction();
-            // save the student objects
-            session.save(tempInstructor);
+
+            Course tempCourse=session.get(Course.class,id);
+
+            session.delete(tempCourse);
             // commit transaction
             session.getTransaction().commit();
             System.out.println("Successful" + session.getProperties());
@@ -34,6 +34,8 @@ public class CreateDemo {
             e.printStackTrace();
         }
         finally {
+
+            session.close();
             factory.close();
         }
     }
