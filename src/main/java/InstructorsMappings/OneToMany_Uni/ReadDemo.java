@@ -21,22 +21,40 @@ public class ReadDemo {
 
             session.beginTransaction();
 
-            int theId=1;
+            int theId=5;
             Course tempCourse=session.get(Course.class,theId);
+
 
             System.out.println(tempCourse);
 
             // commit transaction
 
-            System.out.println(tempCourse.getReviews());
+            System.out.println("Reviews: "+tempCourse.getReviews());
 
             session.getTransaction().commit();
 
+            session.close();
+
+            session=factory.getCurrentSession();
+
+            session.beginTransaction();
+            int theId1=5;
+            Course tempCourse1=session.get(Course.class,theId1);
+
+
+            System.out.println(tempCourse1);
+
+            // commit transaction
+
+            System.out.println("Reviews: "+tempCourse1.getReviews());
+
             System.out.println("Successful" + session.getProperties());
+            session.getTransaction().commit();
 
         } catch (Exception e) {
             if (session.getTransaction() != null) {
-                session.getTransaction().rollback();
+                System.out.println(e.getMessage());
+                //session.getTransaction().rollback();
             }
             e.printStackTrace();
         }

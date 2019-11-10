@@ -3,6 +3,7 @@ package main.java.InstructorsMappings.OnetoOne;
 import javax.persistence.*;
 
 @Entity
+//@Embeddable
 @Table(name = "instructor_detail")
 public class InstructorDetail{
 
