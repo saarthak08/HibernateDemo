@@ -31,6 +31,11 @@ public class CreateDemo {
             System.out.println("Saving the course");
             session.save(tempCourse);
 
+            tempCourse.setTitle("Pacman Changed");
+            session.detach(tempCourse);
+
+            tempCourse.setTitle("Pacman Changed 2");
+
             // commit transaction
             session.getTransaction().commit();
 
