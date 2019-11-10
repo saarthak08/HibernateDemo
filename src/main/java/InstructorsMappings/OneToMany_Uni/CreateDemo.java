@@ -13,6 +13,7 @@ public class CreateDemo {
                 .addAnnotatedClass(main.java.InstructorsMappings.OnetoOne.InstructorDetail.class)
                 .addAnnotatedClass(Course.class)
                 .addAnnotatedClass(Review.class)
+                .addAnnotatedClass(main.java.student.Student.class)
                 .buildSessionFactory();
 
         Session session=factory.getCurrentSession();
@@ -25,6 +26,7 @@ public class CreateDemo {
             tempCourse.addReview(new Review("Great Course"));
             tempCourse.addReview(new Review("Not so good"));
             tempCourse.addReview(new Review("What a dumb course"));
+
 
             System.out.println("Saving the course");
             session.save(tempCourse);

@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8faa2a-1035-40e5-828c-b15bc1162a77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/EagerVsLazy/EagerLazyDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/ManyToMany/CreateCourseAndStudentDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Uni/CreateDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Uni/DeleteCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Uni/ReadDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Uni/Review.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Bi/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany/CreateInstructorDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Bi/CreateInstructorDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany/DeleteInstructorCourseDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Bi/DeleteInstructorCourseDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OnetoOne/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OnetoOne/Instructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/student/Create3StudentsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/Create3StudentsDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/student/CreateStudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/CreateStudentDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/ManyToMany/CreateCourseAndStudentDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/ManyToMany/CreateCourseAndStudentDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Bi/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Bi/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Bi/CreateInstructorDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Bi/CreateInstructorDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Bi/DeleteInstructorCourseDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Bi/DeleteInstructorCourseDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Uni/CreateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Uni/CreateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Uni/DeleteCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Uni/DeleteCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Uni/ReadDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OneToMany_Uni/ReadDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OnetoOne/CreateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InstructorsMappings/OnetoOne/CreateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CreateDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CreateDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/InstructorsMappings/OneToMany_Bi/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/InstructorsMappings/OneToMany_Bi/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/InstructorsMappings/OneToMany_Uni/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/InstructorsMappings/OneToMany_Uni/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/HibernateDemo.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,10 +147,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CreateDemo">
-    <configuration name="CreateDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CreateDemo" />
+  <component name="RunManager" selected="Application.ReadDemo">
+    <configuration name="CreateCourseAndStudentDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InstructorsMappings.ManyToMany.CreateCourseAndStudentDemo" />
       <module name="HibernateDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="InstructorsMappings.ManyToMany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,10 +168,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateInstructorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InstructorsMappings.OneToMany_Bi.CreateInstructorDemo" />
+      <module name="HibernateDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="InstructorsMappings.OneToMany_Bi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteCourse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InstructorsMappings.OneToMany_Uni.DeleteCourse" />
+      <module name="HibernateDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="InstructorsMappings.OneToMany_Uni.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InstructorsMappings.OneToMany_Uni.ReadDemo" />
+      <module name="HibernateDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="InstructorsMappings.OneToMany_Uni.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadDemo" />
+        <item itemvalue="Application.DeleteCourse" />
+        <item itemvalue="Application.CreateCourseAndStudentDemo" />
+        <item itemvalue="Application.CreateInstructorDemo" />
         <item itemvalue="Application.CreateDemo" />
-        <item itemvalue="Application.CreateDemo (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +246,8 @@
       <workItem from="1572664271985" duration="1421000" />
       <workItem from="1573157067693" duration="1659000" />
       <workItem from="1573295997282" duration="902000" />
-      <workItem from="1573296967611" duration="13844000" />
+      <workItem from="1573296967611" duration="14180000" />
+      <workItem from="1573393408774" duration="3326000" />
     </task>
     <servers />
   </component>

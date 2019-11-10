@@ -1,4 +1,6 @@
 
+import InstructorsMappings.OneToMany_Bi.Course;
+import InstructorsMappings.OneToMany_Uni.Review;
 import main.java.InstructorsMappings.OnetoOne.Instructor;
 import main.java.InstructorsMappings.OnetoOne.InstructorDetail;
 import org.hibernate.Session;
@@ -12,6 +14,9 @@ public class CreateDemo {
                 .configure("main/resources/hibernate.cfg.xml")
                 .addAnnotatedClass(Instructor.class)
                 .addAnnotatedClass(InstructorDetail.class)
+                .addAnnotatedClass(Course.class)
+                .addAnnotatedClass(main.java.student.Student.class)
+                .addAnnotatedClass(Review.class)
                 .buildSessionFactory();
 
         Session session=factory.getCurrentSession();

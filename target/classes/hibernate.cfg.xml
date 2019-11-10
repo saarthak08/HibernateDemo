@@ -14,7 +14,8 @@
 
 
         <!-- Select our SQL dialect -->
-        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+
 
         <!-- Echo the SQL to stdout -->
         <property name="show_sql">true</property>
@@ -23,7 +24,10 @@
 		<property name="current_session_context_class">thread</property>
 
         <property name="hibernate.hbm2ddl.auto">update</property>
-        
+
+        <property name="hibernate.hibernate.hbm2ddl.auto">update</property>
+
+
 
 
     </session-factory>

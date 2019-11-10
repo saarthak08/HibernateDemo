@@ -13,6 +13,7 @@ public class DeleteCourse {
                 .addAnnotatedClass(main.java.InstructorsMappings.OnetoOne.InstructorDetail.class)
                 .addAnnotatedClass(Course.class)
                 .addAnnotatedClass(Review.class)
+                .addAnnotatedClass(main.java.student.Student.class)
                 .buildSessionFactory();
 
         Session session=factory.getCurrentSession();

@@ -1,5 +1,6 @@
 package InstructorsMappings.OneToMany_Bi;
 
+import InstructorsMappings.OneToMany_Uni.Review;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -13,6 +14,8 @@ public class DeleteInstructorCourseDemo {
                 .addAnnotatedClass(main.java.InstructorsMappings.OnetoOne.Instructor.class)
                 .addAnnotatedClass(main.java.InstructorsMappings.OnetoOne.InstructorDetail.class)
                 .addAnnotatedClass(Course.class)
+                .addAnnotatedClass(Review.class)
+                .addAnnotatedClass(main.java.student.Student.class)
                 .buildSessionFactory();
 
         Session session=factory.getCurrentSession();

@@ -27,7 +27,8 @@ public class Course {
     @JoinColumn(name = "instructor_id")
     private main.java.InstructorsMappings.OnetoOne.Instructor instructor;
 
-    @OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy = "course_id")
+
+    @OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     @JoinColumn(name = "course_id")
     private List<Review> reviews;
 

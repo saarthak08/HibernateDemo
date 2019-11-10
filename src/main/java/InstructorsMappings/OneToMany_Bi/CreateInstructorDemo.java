@@ -1,5 +1,6 @@
 package InstructorsMappings.OneToMany_Bi;
 
+import InstructorsMappings.OneToMany_Uni.Review;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -11,6 +12,8 @@ public class CreateInstructorDemo {
                 .addAnnotatedClass(main.java.InstructorsMappings.OnetoOne.Instructor.class)
                 .addAnnotatedClass(main.java.InstructorsMappings.OnetoOne.InstructorDetail.class)
                 .addAnnotatedClass(Course.class)
+                .addAnnotatedClass(Review.class)
+                .addAnnotatedClass(main.java.student.Student.class)
                 .buildSessionFactory();
 
         Session session=factory.getCurrentSession();
@@ -24,12 +27,11 @@ public class CreateInstructorDemo {
             session.beginTransaction();
             // save the student objects
 
-            main.java.InstructorsMappings.OnetoOne.Instructor tempInstructor1=session.get(main.java.InstructorsMappings.OnetoOne.Instructor.class,id);
             Course tempCourse1=new Course("Air Guitar - The Ultimate Guide");
             Course tempCourse2=new Course("The Pinball Masterclass");
 
-            tempInstructor1.add(tempCourse1);
-            tempInstructor1.add(tempCourse2);
+            tempInstructor.add(tempCourse1);
+            tempInstructor.add(tempCourse2);
 
             session.save(tempCourse1);
             session.save(tempCourse2);
