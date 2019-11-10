@@ -1,13 +1,12 @@
-package InstructorsMappings.OneToMany;
+package InstructorsMappings.ManyToMany;
 
+import InstructorsMappings.OneToMany_Bi.Course;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class DeleteInstructorCourseDemo {
-
+public class CreateCourseAndStudentDemo {
     public static void main(String[] args){
-
         SessionFactory factory=new Configuration()
                 .configure("main/resources/hibernate.cfg.xml")
                 .addAnnotatedClass(main.java.InstructorsMappings.OnetoOne.Instructor.class)
@@ -17,13 +16,30 @@ public class DeleteInstructorCourseDemo {
 
         Session session=factory.getCurrentSession();
         try {
-            int id=1;
-
+            // start a transaction
             session.beginTransaction();
+            // save the student objects
 
-            Course tempCourse=session.get(Course.class,id);
+            Course tempCourse=new Course("Pacman");
 
-            session.delete(tempCourse);
+
+            System.out.println("Saving the course");
+            session.save(tempCourse);
+
+            main.java.student.Student tempStudent1=new main.java.student.Student("John","Doe","johndoe@gmail.com");
+            main.java.student.Student tempStudent2=new main.java.student.Student("Mary","Walker","marywalker@gmail.com");
+            main.java.student.Student tempStudent3=new main.java.student.Student("Bonita","Applebaum","bonitaapplebaum@gmail.com");
+
+            tempCourse.addStudent(tempStudent1);
+            tempCourse.addStudent(tempStudent2);
+            tempCourse.addStudent(tempStudent3);
+
+            System.out.println("Saving students...");
+
+            session.save(tempStudent1);
+            session.save(tempStudent2);
+            session.save(tempStudent3);
+
             // commit transaction
             session.getTransaction().commit();
             System.out.println("Successful" + session.getProperties());

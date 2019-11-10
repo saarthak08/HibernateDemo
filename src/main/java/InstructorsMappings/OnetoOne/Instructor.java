@@ -1,6 +1,6 @@
 package main.java.InstructorsMappings.OnetoOne;
 
-import InstructorsMappings.OneToMany.Course;
+import InstructorsMappings.OneToMany_Bi.Course;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -24,11 +24,11 @@ public class Instructor{
     @Column(name = "email")
     private String email;
 
-    @OneToMany(mappedBy = "instructor",cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
+    @OneToMany(mappedBy = "instructor",cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH},fetch = FetchType.LAZY)
     private List<Course> courses;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "instructor_detail_id")
+    @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "instructor_detail_id",referencedColumnName = "id")
     private main.java.InstructorsMappings.OnetoOne.InstructorDetail instructorDetail;
 
     public Instructor(String firstName, String lastName, String email) {
@@ -75,6 +75,14 @@ public class Instructor{
 
     public void setInstructorDetail(main.java.InstructorsMappings.OnetoOne.InstructorDetail instructorDetail) {
         this.instructorDetail = instructorDetail;
+    }
+
+    public List<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
     }
 
     @Override

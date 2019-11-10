@@ -11,7 +11,7 @@ public class CreateStudentDemo {
         //create Session Factory
         SessionFactory factory=new Configuration()
                                     .configure("main/resources/hibernate.cfg.xml")
-                                    .addAnnotatedClass(Student.class)
+                                    .addAnnotatedClass(main.java.student.Student.class)
                                     .buildSessionFactory();
 
         //create Session
@@ -22,7 +22,7 @@ public class CreateStudentDemo {
 
             //create a student object
             System.out.println("Creating a Student..");
-            Student tempStudent=new Student("Paul","Walker","paulwalker@gmail.com");
+            main.java.student.Student tempStudent=new main.java.student.Student("Paul","Walker","paulwalker@gmail.com");
 
             //start a transaction
             session.beginTransaction();
